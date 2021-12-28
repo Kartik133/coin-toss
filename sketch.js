@@ -8,7 +8,7 @@ function setup() {
   createCanvas(400,400);
 
   a = createSprite(width/2,height-15,width-10,20);
-  a.shapeColor = rgb(255,255,255);
+  a.shapeColor = rgb(0,0,0);
 
   e = createSprite(width/2,height-15,width-10,20);
   e.addAnimation("dddd",d);
@@ -31,7 +31,7 @@ function setup() {
 }
 
 function draw() {
-  background(0);
+  background(255);
 
   drawSprites();
 
