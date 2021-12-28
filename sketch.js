@@ -10,7 +10,7 @@ function setup() {
   a = createSprite(width/2,height-15,width-10,20);
   a.shapeColor = rgb(0,0,0);
 
-  e = createSprite(width/2,height-45,width-10,20);
+  e = createSprite(width/2,height-105,width-10,20);
   e.addAnimation("dddd",d);
   e.scale = 0.5;
   
