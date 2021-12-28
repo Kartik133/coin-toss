@@ -80,5 +80,7 @@ function draw() {
     
   }
 
+  console.log(e.velocity.y);
+
   drawSprites();
 }
