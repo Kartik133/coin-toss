@@ -1,6 +1,8 @@
-var a,b,c,d,e;
+var a,b,c,d,e,f;
+var gameState = "start";
 
 function preload() {
+  f =  loadAnimation("a.png");
   d =  loadAnimation("a.png","b.png","c.png","d.png","e.png","f.png","g.png","h.png");
 }
 
@@ -10,7 +12,8 @@ function setup() {
   a = createSprite(width/2,height-15,width-10,20);
   a.shapeColor = rgb(0,0,0);
 
-  e = createSprite(width/2,height-65,width-10,20);
+  e = createSprite(width/2-20,height-65,width-10,20);
+  e.addAnimation("ddd",f);
   e.addAnimation("dddd",d);
   e.scale = 0.3;
   
@@ -33,7 +36,9 @@ function setup() {
 function draw() {
   background(255);
 
-  drawSprites();
+  if(gameState==="start") {
+    
+  }
 
-  console.log(a.x,a.y);
+  drawSprites();
 }
