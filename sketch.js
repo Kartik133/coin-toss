@@ -12,6 +12,7 @@ function setup() {
 
   e = createSprite(width/2,height-15,width-10,20);
   e.addAnimation("dddd",d);
+  e.scale = 0.5;
   
   
   b = createButton("HEADS");
