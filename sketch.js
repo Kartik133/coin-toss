@@ -73,7 +73,7 @@ function draw() {
     }
   }
 
-  e.velocityY += 0.8;
+  e.velocityY += 1.5;
   e.collide(a);
 
   if(gameState==="reset") {
