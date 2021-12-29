@@ -105,6 +105,7 @@ function draw() {
      }
 
     h.mousePressed(()=>{
+      j = -12;
       gameState = "start";
     });
   }
