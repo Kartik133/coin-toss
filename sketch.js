@@ -21,7 +21,7 @@ function setup() {
   e.addAnimation("dd",g);
   e.addAnimation("ddd",f);
   e.addAnimation("dddd",d);
-  e.scale = 0.3;
+  e.scale = 1;
   
   
   b = createButton("HEADS");
@@ -30,19 +30,19 @@ function setup() {
 
   b.position(20,height-70);
   c.position(width-100,height-70);
-  h.position(width-120,height-110);
+  h.position(width-120,height-70);
   
-  b.style('width', '80px');
-  b.style('height', '40px');
+  b.style('width', '120px');
+  b.style('height', '80px');
   b.style('background', 'orange');
   b.style('font-size', '20px');
 
-  c.style('width', '80px');
-  c.style('height', '40px');
+  c.style('width', '120px');
+  c.style('height', '80px');
   c.style('background', 'orange');
   c.style('font-size', '20px');
 
-  h.style('width', '100px');
+  h.style('width', '200px');
   h.style('height', '80px');
   h.style('background', 'orange');
   h.style('font-size', '20px');
@@ -103,13 +103,13 @@ function draw() {
 
     if(x===xx) {
       textAlign(CENTER);
-      textSize(40);
+      textSize(80);
       noStroke();
       fill(0);
       text("You Won",width/2,height/2);
     }else{
        textAlign(CENTER);
-       textSize(40);
+       textSize(80);
        noStroke();
        fill(0);
        text("You Lost",width/2,height/2);
