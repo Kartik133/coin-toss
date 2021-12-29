@@ -17,7 +17,7 @@ function setup() {
   a = createSprite(width/2,height-15,width-10,20);
   a.shapeColor = rgb(255,255,255);
 
-  e = createSprite(width/2-20,height-65,width-10,20);
+  e = createSprite(width/2,height-65,width-10,20);
   e.addAnimation("dd",g);
   e.addAnimation("ddd",f);
   e.addAnimation("dddd",d);
