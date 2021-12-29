@@ -121,7 +121,7 @@ function draw() {
     });
   }
 
-  console.log(e.velocity.y);
+  text(mouseX+";"+mouseY,400,400);
 
   drawSprites();
 }
