@@ -80,12 +80,12 @@ function draw() {
       switch(rand) {
         case 1:e.changeAnimation("ddd",f);
                xx = "heads";
-               i.play();
+               k.play();
                gameState = "reset";
                break;
         case 2:e.changeAnimation("dd",g);
                xx = "tails"; 
-               i.play();
+               k.play();
                gameState = "reset";
                break;
         default:break;
