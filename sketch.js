@@ -30,22 +30,22 @@ function setup() {
 
   b.position(20,height-110);
   c.position(width-140,height-110);
-  h.position(width-220,height-110);
+  h.position(width-200,height-110);
   
   b.style('width', '120px');
   b.style('height', '80px');
   b.style('background', 'orange');
-  b.style('font-size', '20px');
+  b.style('font-size', '30px');
 
   c.style('width', '120px');
   c.style('height', '80px');
   c.style('background', 'orange');
-  c.style('font-size', '20px');
+  c.style('font-size', '30px');
 
   h.style('width', '200px');
   h.style('height', '80px');
   h.style('background', 'orange');
-  h.style('font-size', '20px');
+  h.style('font-size', '30px');
 }
 
 function draw() {
@@ -103,13 +103,13 @@ function draw() {
 
     if(x===xx) {
       textAlign(CENTER);
-      textSize(80);
+      textSize(120);
       noStroke();
       fill(0);
       text("You Won",width/2,height/2);
     }else{
        textAlign(CENTER);
-       textSize(80);
+       textSize(120);
        noStroke();
        fill(0);
        text("You Lost",width/2,height/2);
