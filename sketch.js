@@ -94,13 +94,13 @@ function draw() {
 
     if(x===xx) {
       textAlign(CENTER);
-      textSize(10);
+      textSize(40);
       noStroke();
       fill(0);
       text("You Won",width/2,height/2);
     }else{
        textAlign(CENTER);
-       textSize(10);
+       textSize(40);
        noStroke();
        fill(0);
        text("You Lost",width/2,height/2);
