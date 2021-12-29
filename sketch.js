@@ -24,7 +24,7 @@ function setup() {
   
   b = createButton("HEADS");
   c = createButton("TAILS");
-  h = createButton("PLAY AGAIN");
+  h = createButton("TOSS AGAIN");
 
   b.position(width-380,height-70);
   c.position(width-100,height-70);
