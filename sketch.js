@@ -73,7 +73,7 @@ function draw() {
     
     e.changeAnimation("dddd",d);
     e.velocityY = j;
-    j+=0.4;
+    j+=0.5;
 
     if(e.collide(a)) {
       rand = Math.round(random(1,2));
