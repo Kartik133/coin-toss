@@ -1,7 +1,7 @@
 var a,b,c,d,e,f,g,h,i,k;
 var gameState = "start";
 var x,xx;
-var j = -16;
+var j = -20;
 
 function preload() {
   g =  loadAnimation("e.png");
@@ -29,23 +29,23 @@ function setup() {
   h = createButton("TOSS AGAIN");
 
   b.position(20,height-110);
-  c.position(width-140,height-110);
-  h.position(width-200,height-110);
+  c.position(width-160,height-110);
+  h.position(width-220,height-110);
   
-  b.style('width', '120px');
+  b.style('width', '140px');
   b.style('height', '80px');
   b.style('background', 'orange');
-  b.style('font-size', '30px');
+  b.style('font-size', '40px');
 
-  c.style('width', '120px');
+  c.style('width', '140px');
   c.style('height', '80px');
   c.style('background', 'orange');
-  c.style('font-size', '30px');
+  c.style('font-size', '40px');
 
   h.style('width', '200px');
   h.style('height', '80px');
   h.style('background', 'orange');
-  h.style('font-size', '30px');
+  h.style('font-size', '40px');
 }
 
 function draw() {
@@ -116,7 +116,7 @@ function draw() {
      }
 
     h.mousePressed(()=>{
-      j = -16;
+      j = -20;
       gameState = "start";
     });
   }
