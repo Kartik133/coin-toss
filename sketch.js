@@ -1,4 +1,4 @@
-var a,b,c,d,e,f,g;
+var a,b,c,d,e,f,g,h;
 var gameState = "start";
 var x,xx;
 var j = -12;
@@ -24,9 +24,11 @@ function setup() {
   
   b = createButton("HEADS");
   c = createButton("TAILS");
+  h = createButton("TAILS");
 
   b.position(width-380,height-70);
   c.position(width-100,height-70);
+  h.position(width-100,height-70);
   
   b.style('width', '80px');
   b.style('height', '40px');
@@ -35,12 +37,18 @@ function setup() {
   c.style('width', '80px');
   c.style('height', '40px');
   c.style('background', 'orange');
+
+  h.style('width', '80px');
+  h.style('height', '40px');
+  h.style('background', 'orange');
 }
 
 function draw() {
   background(255);
 
   if(gameState==="start") {
+    h.hide();
+
     b.mousePressed(()=>{
       x = "heads";
       gameState = "spin";
@@ -58,16 +66,18 @@ function draw() {
     
     e.changeAnimation("dddd",d);
     e.velocityY = j;
-    j++;
+    j-=0.24;
 
     if(e.collide(a)) {
       rand = Math.round(random(1,2));
       switch(rand) {
         case 1:e.changeAnimation("ddd",f);
                gameState = "reset";
+               xx = "heads";
                break;
         case 2:e.changeAnimation("dd",g);
                gameState = "reset";
+               xx = "tails";
                break;
         default:break;
       }
@@ -77,7 +87,23 @@ function draw() {
   e.collide(a);
 
   if(gameState==="reset") {
-    
+    h.show();
+
+    if(x===xx) {
+      textAlign(CENTER);
+      noStroke();
+      fill(0);
+      text("You Win",width/2,height/2);
+    }else{
+       textAlign(CENTER);
+       noStroke();
+       fill(0);
+       text("You Lose",width/2,height/2);
+     }
+
+    h.mousePressed(()=>{
+      gameState = "start";
+    });
   }
 
   console.log(e.velocity.y);
