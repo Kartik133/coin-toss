@@ -12,10 +12,10 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(400,400);
+  createCanvas(windowWidth,windowHeight);
 
   a = createSprite(width/2,height-15,width-10,20);
-  a.shapeColor = rgb(255,255,255);
+  a.shapeColor = rgb(0,0,0);
 
   e = createSprite(width/2,height-65,width-10,20);
   e.addAnimation("dd",g);
@@ -28,7 +28,7 @@ function setup() {
   c = createButton("TAILS");
   h = createButton("TOSS AGAIN");
 
-  b.position(width-380,height-70);
+  b.position(20,height-70);
   c.position(width-100,height-70);
   h.position(width-120,height-70);
   
@@ -46,7 +46,7 @@ function setup() {
 }
 
 function draw() {
-  background(0);
+  background(255);
 
   if(gameState==="start") {
     h.hide();
