@@ -32,18 +32,18 @@ function setup() {
   c.position(width-180,height-110);
   h.position(width-220,height-140);
   
-  b.style('width', '160px');
-  b.style('height', '80px');
+ // b.style('width', '160px');
+ // b.style('height', '80px');
   b.style('background', 'orange');
   b.style('font-size', '40px');
 
-  c.style('width', '160px');
-  c.style('height', '80px');
+ // c.style('width', '160px');
+ // c.style('height', '80px');
   c.style('background', 'orange');
   c.style('font-size', '40px');
 
-  h.style('width', '200px');
-  h.style('height', '100px');
+ // h.style('width', '200px');
+ // h.style('height', '100px');
   h.style('background', 'orange');
   h.style('font-size', '40px');
 }
