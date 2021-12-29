@@ -1,4 +1,4 @@
-var a,b,c,d,e,f,g,h;
+var a,b,c,d,e,f,g,h,i,k;
 var gameState = "start";
 var x,xx;
 var j = -12;
@@ -7,6 +7,8 @@ function preload() {
   g =  loadAnimation("e.png");
   f =  loadAnimation("a.png");
   d =  loadAnimation("a.png","b.png","c.png","d.png","e.png","f.png","g.png","h.png");
+  i = loadSound("toss.mp3");
+  k = loadSound("collide.mp3");
 }
 
 function setup() {
@@ -54,11 +56,13 @@ function draw() {
 
     b.mousePressed(()=>{
       x = "heads";
+      i.play();
       gameState = "spin";
     });
 
     c.mousePressed(()=>{
       x = "tails";
+      i.play();
       gameState = "spin";
     });
   }
@@ -75,12 +79,14 @@ function draw() {
       rand = Math.round(random(1,2));
       switch(rand) {
         case 1:e.changeAnimation("ddd",f);
-               gameState = "reset";
                xx = "heads";
+               i.play();
+               gameState = "reset";
                break;
         case 2:e.changeAnimation("dd",g);
+               xx = "tails"; 
+               i.play();
                gameState = "reset";
-               xx = "tails";
                break;
         default:break;
       }
