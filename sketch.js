@@ -33,7 +33,7 @@ function setup() {
   h.position(width-120,height-110);
   
   b.style('width', '80px');
-  b.style('height', '80px');
+  b.style('height', '40px');
   b.style('background', 'orange');
   b.style('font-size', '20px');
 
@@ -43,7 +43,7 @@ function setup() {
   c.style('font-size', '20px');
 
   h.style('width', '100px');
-  h.style('height', '40px');
+  h.style('height', '80px');
   h.style('background', 'orange');
   h.style('font-size', '20px');
 }
