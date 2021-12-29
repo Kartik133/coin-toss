@@ -24,7 +24,7 @@ function setup() {
   
   b = createButton("HEADS");
   c = createButton("TAILS");
-  h = createButton("TAILS");
+  h = createButton("RESET");
 
   b.position(width-380,height-70);
   c.position(width-100,height-70);
@@ -49,6 +49,9 @@ function draw() {
   if(gameState==="start") {
     h.hide();
 
+    b.show();
+    c.show();
+
     b.mousePressed(()=>{
       x = "heads";
       gameState = "spin";
@@ -66,7 +69,7 @@ function draw() {
     
     e.changeAnimation("dddd",d);
     e.velocityY = j;
-    j+=0.24;
+    j+=0.3;
 
     if(e.collide(a)) {
       rand = Math.round(random(1,2));
