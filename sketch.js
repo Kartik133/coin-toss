@@ -29,8 +29,8 @@ function setup() {
   h = createButton("TOSS AGAIN");
 
   b.position(20,height-90);
-  c.position(width-110,height-70);
-  h.position(width-290,height-140);
+  c.position(width-130,height-90);
+  h.position(width-250,height-100);
   
  // b.style('width', '160px');
  // b.style('height', '80px');
