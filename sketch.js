@@ -1,7 +1,7 @@
 var a,b,c,d,e,f,g,h,i,k;
 var gameState = "start";
 var x,xx;
-var j = -12;
+var j = -16;
 
 function preload() {
   g =  loadAnimation("e.png");
@@ -73,7 +73,7 @@ function draw() {
     
     e.changeAnimation("dddd",d);
     e.velocityY = j;
-    j+=0.3;
+    j+=0.4;
 
     if(e.collide(a)) {
       rand = Math.round(random(1,2));
@@ -113,7 +113,7 @@ function draw() {
      }
 
     h.mousePressed(()=>{
-      j = -12;
+      j = -16;
       gameState = "start";
     });
   }
