@@ -28,9 +28,9 @@ function setup() {
   c = createButton("TAILS");
   h = createButton("TOSS AGAIN");
 
-  b.position(20,height-80);
-  c.position(width-110,height-80);
-  h.position(width-235,height-130);
+  b.position(20,height-90);
+  c.position(width-110,height-90);
+  h.position(width-290,height-140);
   
  // b.style('width', '160px');
  // b.style('height', '80px');
