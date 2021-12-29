@@ -28,7 +28,7 @@ function setup() {
 
   b.position(width-380,height-70);
   c.position(width-100,height-70);
-  h.position(width-140,height-70);
+  h.position(width-100,height-70);
   
   b.style('width', '80px');
   b.style('height', '40px');
