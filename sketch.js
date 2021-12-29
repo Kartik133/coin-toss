@@ -28,9 +28,9 @@ function setup() {
   c = createButton("TAILS");
   h = createButton("TOSS AGAIN");
 
-  b.position(20,height-110);
-  c.position(width-180,height-110);
-  h.position(width-220,height-140);
+  b.position(20,height-80);
+  c.position(width-110,height-80);
+  h.position(width-235,height-130);
   
  // b.style('width', '160px');
  // b.style('height', '80px');
@@ -121,7 +121,7 @@ function draw() {
     });
   }
 
-  text(mouseX+";"+mouseY,400,400);
+  //text(mouseX+";"+mouseY,400,400);
 
   drawSprites();
 }
