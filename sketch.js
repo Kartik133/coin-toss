@@ -58,6 +58,7 @@ function draw() {
     
     e.changeAnimation("dddd",d);
     e.velocityY = -12;
+      e.velocityY += 1.5;
 
     if(e.collide(a)) {
       rand = Math.round(random(1,2));
@@ -73,7 +74,6 @@ function draw() {
     }
   }
 
-  e.velocityY += 1.5;
   e.collide(a);
 
   if(gameState==="reset") {
