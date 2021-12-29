@@ -94,14 +94,16 @@ function draw() {
 
     if(x===xx) {
       textAlign(CENTER);
+      textSize(10);
       noStroke();
       fill(0);
-      text("You Win",width/2,height/2);
+      text("You Won",width/2,height/2);
     }else{
        textAlign(CENTER);
+       textSize(10);
        noStroke();
        fill(0);
-       text("You Lose",width/2,height/2);
+       text("You Lost",width/2,height/2);
      }
 
     h.mousePressed(()=>{
