@@ -12,7 +12,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(windowWidth,windowHeight);
+  createCanvas(600,windowHeight);
 
   a = createSprite(width/2,height-15,width-10,20);
   a.shapeColor = rgb(0,0,0);
@@ -46,6 +46,8 @@ function setup() {
  // h.style('height', '100px');
   h.style('background', 'orange');
   h.style('font-size', '40px');
+
+  frameRate(60);
 }
 
 function draw() {
